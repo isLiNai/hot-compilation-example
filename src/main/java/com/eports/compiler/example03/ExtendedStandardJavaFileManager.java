@@ -18,7 +18,7 @@ public class ExtendedStandardJavaFileManager extends ForwardingJavaFileManager<J
      *
      * @param fileManager delegate to this file manager
      */
-    protected ExtendedStandardJavaFileManager(JavaFileManager fileManager, Map<String,OutClassFileObj> classFileObjMap) {
+    public ExtendedStandardJavaFileManager(JavaFileManager fileManager, Map<String, OutClassFileObj> classFileObjMap) {
         super(fileManager);
         this.classFileObjMap = classFileObjMap;
     }

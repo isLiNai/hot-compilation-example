@@ -43,7 +43,7 @@ public class JavaCompilerExample03 {
         try {
             Class<?> aClass = byteClassLoader.loadClass(className);
             Method out = aClass.getMethod("out");
-            Object o = aClass.newInstance();
+            Object o = aClass.getDeclaredConstructor().newInstance();
             out.invoke(o);
         } catch (Exception e) {
             e.printStackTrace();

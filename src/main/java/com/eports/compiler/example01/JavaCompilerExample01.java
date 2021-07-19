@@ -25,7 +25,7 @@ public class JavaCompilerExample01 {
         // 编译后的诊断信息
         DiagnosticCollector<JavaFileObject> diagnostics = new DiagnosticCollector<JavaFileObject>();
         // JavaFileObject 对象
-        List<StringJavaFileObj> stringJavaFileObjs = Arrays.asList(new StringJavaFileObj("Test", generateTestCode()));
+        List<StringJavaFileObj> stringJavaFileObjs = Arrays.asList(new StringJavaFileObj("Test2", generateTestCode()));
 
         //-classpath 用来指定搜索类文件(*.class文件)的路径
         //-sourcepath 用来指定搜索源文件(*.java文件)的路径
@@ -75,7 +75,7 @@ public class JavaCompilerExample01 {
      * @return
      */
     private static String generateTestCode(){
-        return " class Test{\n" +
+        return " class Test2{\n" +
                 "        public static void main(String[] args) {\n" +
                 "            System.out.println(\"hello!\");\n" +
                 "        }\n" +
